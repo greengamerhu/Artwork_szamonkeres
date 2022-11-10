@@ -4,10 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="main.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script src="main.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <p >A szobrok összesített darabszáma <span id="osszDB">0</span> </p>
+            </div>
+            <div class="col-md-6">
+                <p >A szobrok összesített ára: <span id="osszAr">0</span></p>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <label for="nev">
+                    A Szobor neve: <br>
+                    <input type="text" name="nev" id="nev">
+                </label> <br>
+            </div>
+            <div class="col-sm-2">
+                <label for="ev" >
+                    A Szobor készitésének éve: <br>
+                    <input type="number" name="ev" id="ev">
+
+                </label>
+            </div>
+            <div class="col-sm-2">
+                <label for="ar">
+                    A Szobor ára (ft): <br>
+                    <input type="number" name="ar" id="ar">
+                </label>
+            </div>
+            <div class="col-md-2">
+                <label for="magassag">
+                    a szobor magassága (cm): <br>
+                    <input type="number" name="magassag" id="magassag">
+                </label>
+            </div>
+            <div class="col-md-4">
+                <label for="felvesz">
+                    <br> 
+                <input type="button" id="submit" name="felvesz" style="width: 100px;"  value="Felvesz">
+                </label>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 d-flex justify-content-center" id="hiba" style="color: red;"> </div>
+            </div>
+        </div>
 </body>
 </html>
